@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="" id="age-label">Age <span>(optional)</span></label>
+          <input
+            min="8"
+            max="12"
+            type="number"
+            id="number"
+            placeholder="Age"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label id="role-label"
+            >Which option best describes your current role?</label
+          >
+          <select name="role" id="dropdown" class="form-control">
+            <option value="" selected disabled hidden>
+              Select current role
+            </option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label id="friend"
+            >Would you recommend freeCodeCamp to a friend?</label
+          >
+          <input type="radio" name="friend" />Definitely
+          <br />
+          <input type="radio" name="friend" />Maybe <br />
+          <input type="radio" name="friend" />Not sure <br />
+        </div>
+        <div class="form-group">
+          <input type="checkbox" value="improvement" />
+          <textarea name="comment" id="" cols="82" rows="7"></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
